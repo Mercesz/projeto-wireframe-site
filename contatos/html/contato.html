@@ -21,54 +21,86 @@
         </nav>
     </header>
 
-    <form class="container">
+    <div class="container">
+
         <h1>Entre em contato conosco!</h1>
+        <p>Preencha o formulário abaixo e nossa equipe retornará o mais breve possível.</p>
 
-        <section class="duvidas">
 
-            <div class="box-input">
-                <label for="nome">Nome:</label>
-                <input type="text" placeholder="Digite o seu nome" id="nome">
-            </div>
+        <form>
+            <h3>📋 Formulário</h3>
 
-            <div class="box-input">
-                <label for="email">E-mail:</label>
-                <input type="text" placeholder="Digite o seu email" id="email">
-            </div>
 
-            <div class="box-input">
-                <label for="duv">Descreva sua dúvida:</label>
-                <textarea name="duv" id="duv" maxlength="200"></textarea>
-                <!-- <input type="text" placeholder="Digite sua dúvida" id="duv"> -->
-            </div>
+            <section class="duvidas">
 
-            <button>Enviar</button>
+                <div class="box-input">
+                    <label for="nome">Nome:</label>
+                    <input type="text" placeholder="Digite o seu nome" id="nome">
+                </div>
+
+                <div class="box-input">
+                    <label for="email">E-mail:</label>
+                    <input type="email" placeholder="Digite o seu email" id="email">
+                </div>
+
+                <div class="box-input">
+                    <label for="duv">Mensagem:</label>
+                    <textarea placeholder="Escreva sua mensagem" name="duv" id="duv" maxlength="200"></textarea>
+                </div>
+
+                <button>Enviar</button>
+            </section>
+        </form>
+
+
+
+        <!-- Informações de contato -->
+        <section>
+            <h2>📞 Informações de contato</h2>
+            <p><strong>Telefone:</strong> (11) 96969-9696</p>
+            <p><strong>WhatsApp:</strong> <a href="https://wa.me/5511999999999" target="_blank">Clique aqui para
+                    conversar</a></p>
+            <p><strong>E-mail:</strong> <a href="mailto:senaiturismos@gmail.com">senaiturismos@gmail.com</a></p>
+            <p><strong>Endereço:</strong> R. Direita, 955 - Vila Santo Antônio, Cotia - SP, 06708-280</p>
         </section>
 
-        <section class="rede-sociais">
-            <h3>Conheça nossas lojas e redes sociais</h3>
 
-            <!-- Link para redes socias -->
-            <div class="redes">
-                <a href="/contatos/html/contato.html">
-                    <img src="../../contatos/imagens/whatsaap.png" alt="whatsapp">
-                </a>
 
-                <a href="/contatos/html/contato.html">
-                    <img src="../../contatos/imagens/instagram.png" alt="instagram">
-                </a>
-            </div>
+        <!-- Horários -->
+        <section>
+            <h2>🕒 Horários de atendimento</h2>
+            <ul>
+                <li>Segunda a Sexta: 08h às 18h</li>
+                <li>Sábados: 09h às 13h</li>
+                <li>Domingos e feriados: fechado</li>
+            </ul>
         </section>
 
 
-        <!-- Testando mapa -->
-        <div class="mapa-container">
-            <iframe src="https://www.google.com/maps/embed?pb=..." width="600" height="450" style="border:0;"
-                allowfullscreen="" loading="lazy">
-            </iframe>
-        </div>
+        <!-- Equipe -->
+        <section>
+            <h2>🧑‍💼 Nossa equipe</h2>
+            <p>Conheça quem está por trás do atendimento:</p>
+            <ul>
+                <li>Ezequiel Merces - Desenvolvedor Front-End</li>
+                <li>Ana Souza – Atendimento ao cliente</li>
+                <li>Carlos Lima – Suporte técnico</li>
+            </ul>
+        </section>
 
-    </form>
+        <!-- Localização -->
+        <section>
+            <h2>📍 Localização</h2>
+            <p>Veja onde estamos no mapa:</p>
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4399.078495513626!2d-46.8493715739604!3d-23.59081112877959!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cfaa98518ad14f%3A0xe7a3b5fbe30a63dc!2sR.%20Direita%2C%20955%20-%20Vila%20Santo%20Ant%C3%B4nio%2C%20Cotia%20-%20SP%2C%2006708-280!5e1!3m2!1spt-BR!2sbr!4v1765630571583!5m2!1spt-BR!2sbr"
+                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+
+    </div>
+    <script src="../js/script.js""></script>
 </body>
 
 </html>
