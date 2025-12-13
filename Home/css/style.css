@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #000;
+    color: #fff;
+    overflow: hidden; /*remove barra de rolagem*/
+}
+
+/* Cabeçalho / NavBar */
+.navBar {
+  width: 100%;
+  background: linear-gradient(#070B52, #3863c9);
+  padding: 6px 20px; 
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* logo a esquerda e menu a direita */
+  height: 55px; 
+  overflow: hidden; /*corta as sobras em baixo*/
+}
+
+/* Logo */
+.logo {
+  width: 120px; 
+  height: auto;
+  max-width: 100%;
+}
+
+.logo-box {
+  background: #ffffff;
+  padding: 0;
+  border-radius: 100%;               
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.15); 
+}
+
+/* Navegação */
+.navBar nav {
+  display: flex;
+  gap: 25px;
+}
+
+.navBar nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 4px 10px;
+  border-radius: 8px;
+}
+
+/* Link ativo */
+.navBar nav a.active {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.navBar nav a:hover {
+  background: rgba(255, 255, 255, 0.18);
+  transform: translateY(-2px);
+}
+
+/* Slides */
+.slides {
+    width: 100%;
+    height: 100vh; /* ocupa a tela inteira */
+    position: relative;
+    overflow: visible; /* permite que as miniaturas apareçam */
+}
+
+.lista {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.item {
+    position: absolute;
+    width: 100%;
+    height: 100%; 
+    opacity: 0;
+    transform: scale(1); /*Redimencionar tamanho de elementos*/
+    transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.item.active {
+    opacity: 1;
+    z-index: 2;
+}
+
+.item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Sombra para deixar o texto visível */
+.item .content { /*é possivel colocar duas divs, no caso div mãe e filha*/
+    position: absolute;
+    bottom: 45%; 
+    left: 8%;
+    max-width: 450px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.item .content h1 {
+    font-size: 2.5rem; 
+    margin-bottom: 10px;
+}
+
+.item .content h3 {
+    font-size: 1.2rem; 
+    margin-bottom: 20px;
+}
+
+.btn {
+    background: #0da3c9;
+    padding: 9px 18px;
+    border-radius: 5px;
+    display: inline-block;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #071e69;
+}
+
+/* Miniaturas */
+.thumbnail {
+    position: absolute;
+    bottom: 120px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    z-index: 20;
+}
+
+.thumb {
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: 0.3s;
+    border-radius: 5px;
+    overflow: hidden;
+    border: 2px solid transparent; 
+}
+
+.thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Quando ativa - borda azul */
+.thumb.active,
+.thumb:hover {
+    opacity: 1;
+    border-color: #00A4BC;
+}
+
+/* Arrows */
+.nextPrevArrows {
+    position: absolute;
+    bottom: 120px; 
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    z-index: 11;
+}
+
+
+.nextPrevArrows button {
+    background: rgba(0,0,0,0.5);
+    border: none;
+    color: #fff;
+    font-size: 1.3rem;
+    padding: 6px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.nextPrevArrows button:hover {
+    background: #00A4BC;
+    transform: scale(1.15);
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+    .item .content h1 { font-size: 2rem; }
+    .item .content h3 { font-size: 1rem; }
+    .thumb { width: 60px; height: 45px; }
+}
+
+@media (max-width: 768px) {
+    .item .content { bottom: 12%; left: 5%; max-width: 300px; }
+    .item .content h1 { font-size: 2rem; }
+    .item .content h3 { font-size: 1rem; }
+    .thumb { width: 50px; height: 35px; }
+}
+
+@media (max-width: 480px) {
+    .item .content h1 { font-size: 1.5rem; }
+    .item .content h3 { font-size: 0.9rem; }
+    .btn { padding: 8px 15px; font-size: 0.9rem; }
+    .thumb { width: 40px; height: 30px; }
+}
