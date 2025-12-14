@@ -1,24 +1,34 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nossos produtos</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nossos produtos</title>
+  <link rel="stylesheet" href="../css/produtos.css">
 </head>
+
 <body>
-    <header>
-      <div class="navBar">
-        <img src="../../produtos/img-produtos/aviation_logo-22-removebg-preview.png" alt="logo" class="logo">
+  <header>
+    <div class="navBar">
+      <img src="../../produtos/img-produtos/aviation_logo-22-removebg-preview.png" alt="logo" class="logo">
+
+      <div class="nav-direita">
+        <div id="divBusca">
+          <input type="text" id="busca" placeholder="Digite sua busca aqui...">
+          <img
+            src="../img-produtos/pngwing.com__26_-removebg-preview.png"
+            alt="Buscar"
+            id="btnBuscar"
+          >
+        </div>
+
         <img src="../../produtos/img-produtos/icons8-carrinho-de-compras-50.png" alt="carrinho" class="compras">
       </div>
-    </header>
+    </div>
+  </header>
 
-    <section>
-        <div class="titulo">
-            <h1>Viaje conosco e dê assas aos seus sonhos!</h1>
-        </div>
-    </section>
-
+  <main class="container">
     <section class="produtos">
       <div>
         <h2>Produtos em Destaque</h2>
@@ -26,9 +36,10 @@
       </div>
 
       <div class="produtos-grid">
+        <!-- CARD 1 -->
         <div class="produtos-card">
           <div class="produtos-img">
-            <img src="../../produtos/img-produtos/rio-sena-torre-eiffel-paris.webp" alt="paris"/>
+            <img src="../../produtos/img-produtos/rio-sena-torre-eiffel-paris.webp" alt="Paris">
           </div>
           <div class="produto-texto">
             <h2>Paris</h2>
@@ -36,19 +47,25 @@
             <p>R$ 2.500,00</p>
             <button>Comprar</button>
           </div>
-         
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="produtos-card">
           <div class="produtos-img">
-            <img src="../../produtos/img-produtos/coliseu-italia.webp" alt="italia"/>
+            <img src="../../produtos/img-produtos/coliseu-italia.webp" alt="Itália">
           </div>
           <div class="produto-texto">
-            <h2>Italia</h2>
+            <h2>Itália</h2>
             <h3>Venha provar da boa gastronomia</h3>
             <p>R$ 2.800,00</p>
             <button>Comprar</button>
           </div>
+        </div>
 
+        <!-- CARD 3 -->
+        <div class="produtos-card">
           <div class="produtos-img">
-            <img src="../../produtos/img-produtos/Espanha.webp" alt="espanha"/>
+            <img src="../../produtos/img-produtos/Espanha.webp" alt="Espanha">
           </div>
           <div class="produto-texto">
             <h2>Espanha</h2>
@@ -56,9 +73,12 @@
             <p>R$ 1.800,00</p>
             <button>Comprar</button>
           </div>
+        </div>
 
+        <!-- CARD 4 -->
+        <div class="produtos-card">
           <div class="produtos-img">
-            <img src="../../produtos/img-produtos/miami-eua.webp" alt="miami"/>
+            <img src="../../produtos/img-produtos/miami-eua.webp" alt="Miami">
           </div>
           <div class="produto-texto">
             <h2>Miami</h2>
@@ -66,9 +86,12 @@
             <p>R$ 2.100,00</p>
             <button>Comprar</button>
           </div>
+        </div>
 
+        <!-- CARD 5 -->
+        <div class="produtos-card">
           <div class="produtos-img">
-            <img src="../../produtos/img-produtos/capadocia-turquia.webp" alt="turquia"/>
+            <img src="../../produtos/img-produtos/capadocia-turquia.webp" alt="Turquia">
           </div>
           <div class="produto-texto">
             <h2>Turquia</h2>
@@ -76,10 +99,17 @@
             <p>R$ 3.300,00</p>
             <button>Comprar</button>
           </div>
-
         </div>
+
       </div>
     </section>
-    
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 Senai Turismo - Todos os direitos reservados</p>
+  </footer>
+
+  <script src="../js/produtos.js"></script>
 </body>
+
 </html>

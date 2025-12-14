@@ -7,7 +7,7 @@ body {
   margin: 0;
   background: #fafcfcaf;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
   padding: 40px;
 }
@@ -16,57 +16,42 @@ body {
   width: 100%;
   max-width: 1100px;
   display: flex;
+  gap: 40px;
+  padding: 40px;
   border-radius: 25px;
-  overflow: hidden;
+  background: #fff;
   box-shadow: 0 10px 30px #5829812f;
 }
 
-/* Logo no lado esquerdo */
 .left {
-  flex: 1.2;
-  background: linear-gradient(#070B52, #3863c9);
-  color: #ffffff;
-  padding: 50px;
-  position: relative;
+  flex: 1;
 }
 
-.titulo {
+.titulo-principal {
   font-size: 28px;
-  margin: 0 0 5px;
+  margin-bottom: 5px;
 }
 
 .subtitulo {
-  margin: 0 0 25px;
-  opacity: 0.9;
+  font-size: 14px;
+  color: #6b5b88;
 }
 
-/* Configuração da imagem */
 .imagem {
-  display: inline-flex;
+  margin: 20px 0;
+  display: flex;
   justify-content: center;
-  align-items: center;
-  background: rgba(255, 255, 255, 0.918);
-  padding: 20px;                        
-  border-radius: 12px;                   
 }
 
 .imagem img {
-  width: 220px; 
-  display: block;
+  width: 220px;
 }
 
-/*Cadastro lado direito */
-.right {
-     flex: 1;
-  background: #ffffff;
-  padding: 40px;
-}
-
-.card-titulo {
+.titulo-form {
   font-size: 14px;
   color: #9b86b8;
   font-weight: bold;
-  margin-bottom: 12px;  
+  margin-bottom: 12px;
 }
 
 form {
@@ -80,40 +65,40 @@ label {
   color: #6b5b88;
 }
 
-/**/
-input[type="text"]{
-    padding: 12px;
+input {
+  padding: 12px;
   border-radius: 10px;
   border: 1px solid #ece7f6;
   font-size: 14px;
   box-shadow: 0 6px 18px #0000000d;
 }
 
-.nome a{
-  text-align: right;
-  display: block;
+.btn {
+  margin-top: 15px;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background:linear-gradient(#070B52, #3863c9);
+  color: #fff;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #00A4BC;
+}
+
+.logar {
+  margin-top: 15px;
+}
+
+.logar a {
   font-size: 12px;
   color: #8d7aa8;
-  margin-top: 10px;
   text-decoration: none;
 }
 
-.E-mail{
-    text-align: right;
-    display: block;
+.footer {
+  margin-top: 30px;
   font-size: 12px;
-  color: #8d7aa8;
-  margin-top: 10px;
-  text-decoration: none;
+  color: #3d3b4296;
 }
-
-.Telefone{
-    text-align: right;
-    display: block;
-  font-size: 12px;
-  color: #8d7aa8;
-  margin-top: 10px;
-  text-decoration: none;
-    
-}
-

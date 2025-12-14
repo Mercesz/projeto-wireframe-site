@@ -1,16 +1,137 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    background-color: #eee;
-    font-size: 20px;
-    color: #000;
-    
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #eee;
+  color: #000;
 }
 
-header{
+/* HEADER */
+.navBar {
+  width: 100%;
+  background: linear-gradient(#070B52, #3863c9);
+  padding: 6px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 55px;
+}
 
+.logo {
+  height: 40px;
+  width: auto;
+}
+
+.nav-direita {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+#divBusca {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+#busca {
+  border: none;
+  outline: none;
+}
+
+#divBusca img {
+  width: 20px;
+  cursor: pointer;
+}
+
+.compras {
+  width: 40px;
+}
+
+/* PRODUTOS */
+.produtos {
+  max-width: 1200px;
+  margin: auto;
+  padding: 30px 0;
+}
+
+.produtos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+/* CARD */
+.produtos-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* IMAGEM COM PROPORÇÃO FIXA */
+.produtos-img {
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+}
+
+.produtos-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* TEXTO */
+.produto-texto {
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.produto-texto h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.produto-texto h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.produto-texto p {
+  font-size: 22px;
+  font-weight: bold;
+  color: #b1b1b1;
+}
+
+/* BOTÃO ALINHADO */
+.produto-texto button {
+  margin-top: auto;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background: linear-gradient(#070B52, #3863c9);
+  color: white;
+  cursor: pointer;
+}
+
+.produto-texto button:hover {
+  background: #00A4BC;
+}
+
+.footer {
+  margin-top: 30px;
+  font-size: 12px;
+  color: #3d3b4296;
 }
