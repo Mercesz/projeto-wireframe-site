@@ -11,7 +11,11 @@
 <body>
   <header>
     <div class="navBar">
-      <img src="../../produtos/img-produtos/aviation_logo-22-removebg-preview.png" alt="logo" class="logo">
+
+      <!--Quando clicar na logo volta para a home-->
+      <a href="../../Home/html/index.html">
+        <img src="../../produtos/img-produtos/aviation_logo-22-removebg-preview.png" alt="logo" class="logo">
+      </a>
 
       <div class="nav-direita">
         <div id="divBusca">
@@ -19,12 +23,16 @@
           <img
             src="../img-produtos/pngwing.com__26_-removebg-preview.png"
             alt="Buscar"
-            id="btnBuscar"
-          >
+            id="btnBuscar">
         </div>
 
-        <img src="../../produtos/img-produtos/icons8-carrinho-de-compras-50.png" alt="carrinho" class="compras">
+        <!-- carrinho com contador -->
+        <div class="carrinho">
+          <img src="../../produtos/img-produtos/icons8-carrinho-de-compras-50.png" alt="carrinho" class="compras">
+          <span id="contadorCarrinho">0</span>
+        </div>
       </div>
+
     </div>
   </header>
 
@@ -111,5 +119,4 @@
 
   <script src="../js/produtos.js"></script>
 </body>
-
 </html>

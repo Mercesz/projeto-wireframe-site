@@ -53,3 +53,7 @@ setInterval(nextSlide, 5000);
 
 // Inicializa o slider
 updateSlide(currentIndex);
+
+document.querySelector('.btn').addEventListener('click', () => {
+  window.location.href = '../../produtos/html/produtos.html';
+});

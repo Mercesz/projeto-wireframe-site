@@ -102,3 +102,24 @@ input {
   font-size: 12px;
   color: #3d3b4296;
 }
+
+/* Responsividade */
+@media (max-width: 1024px) {
+    .item .content h1 { font-size: 2rem; }
+    .item .content h3 { font-size: 1rem; }
+    .thumb { width: 60px; height: 45px; }
+}
+
+@media (max-width: 768px) {
+    .item .content { bottom: 12%; left: 5%; max-width: 300px; }
+    .item .content h1 { font-size: 2rem; }
+    .item .content h3 { font-size: 1rem; }
+    .thumb { width: 50px; height: 35px; }
+}
+
+@media (max-width: 480px) {
+    .item .content h1 { font-size: 1.5rem; }
+    .item .content h3 { font-size: 0.9rem; }
+    .btn { padding: 8px 15px; font-size: 0.9rem; }
+    .thumb { width: 40px; height: 30px; }
+}
