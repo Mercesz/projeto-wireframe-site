@@ -22,20 +22,19 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 65px;
+    /* logo a esquerda e menu a direita */
+    height: 55px;
     overflow: hidden;
+    /*corta as sobras em baixo*/
 }
 
 /* Logo */
 .logo {
-    width: 80px;
-    height: auto;
-}
-
-.logo-box {
+    height: 40px;
+    width: auto;
     background: #ffffff;
-    padding: 8px;
-    border-radius: 50%;
+    padding: 0;
+    border-radius: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -51,13 +50,13 @@ body {
 .navBar nav a {
     color: #ffffff;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 500;
-    padding: 6px 12px;
+    padding: 4px 10px;
     border-radius: 8px;
-    transition: 0.3s;
 }
 
+/* Link ativo */
 .navBar nav a.active {
     background: rgba(255, 255, 255, 0.25);
 }
