@@ -23,6 +23,7 @@ body {
     align-items: center;
     justify-content: space-between;
     height: 65px;
+    overflow: hidden;
 }
 
 /* Logo */
